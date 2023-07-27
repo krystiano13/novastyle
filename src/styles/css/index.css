@@ -1,1 +1,1 @@
-*,::after,::before{margin:0;padding:0;box-sizing:border-box;overflow-x:hidden}
+*,::after,::before{margin:0;padding:0;box-sizing:border-box;overflow-x:hidden}nav{min-height:60px;min-width:100vw}nav .logo{width:60px;min-height:60px;font-family:"Times New Roman",Times,serif;font-weight:700;font-size:1.6rem}nav .navigation{width:calc(100vw - 60px)}nav .navigation>*{margin-left:1rem;margin-right:1rem}nav .navigation>.a{font-size:.8rem;text-decoration:none;color:#000}
