@@ -5,9 +5,18 @@ nav {
     background-color : transparent;
     border : none;
 
+    overflow: hidden;
+
     cursor : pointer;
-    transition: background-color 250ms;
+    transition: background-color 150ms;
     will-change: background-color;
+
+    .wrap {
+        width : 100%;
+        height : 100%;
+        transition : transform 600ms;
+        will-change: transform;
+    }
 
     .stripe {
         width : 25px;
@@ -15,6 +24,28 @@ nav {
         background-color: black;
         margin-top : 0.2rem;
         margin-bottom : 0.2rem;
+        transition: transform 250ms, background-color 250ms;
+        will-change: transform, background-color;
+    }
+  }
+
+  .crossed {
+    .wrap {
+        transform: rotate(90deg);
+    }
+
+    .stripe {
+        background-color: #33333300;
+    }
+    #firstStripe,#lastStripe {
+        background-color: black;
+    }
+
+    #firstStripe {
+        transform : translateY(8px) rotate(45deg);
+    }
+    #lastStripe {
+        transform : translateY(-9px) rotate(-45deg);
     }
   }
 

@@ -5,12 +5,26 @@ import bag from "../assets/bag.svg";
 import search from "../assets/search.svg";
 
 const Navbar = () => {
+  const [dropDown, setDropDown] = React.useState<boolean>(false);
+  const handleHamburgerClick = () => {
+    setDropDown((prev: boolean) => !prev);
+  };
+
   return (
     <nav className="d-flex align-items-center justify-content-between">
-      <button className="hamburgerMenu d-flex flex-column align-items-center justify-content-center d-lg-none">
-        <div id="firstStripe" className="stripe"></div>
-        <div className="stripe"></div>
-        <div id="lastStripe" className="stripe"></div>
+      <button
+        onClick={handleHamburgerClick}
+        className={
+          dropDown
+            ? "crossed hamburgerMenu d-lg-none"
+            : "hamburgerMenu d-lg-none"
+        }
+      >
+        <div className="wrap d-flex flex-column align-items-center justify-content-center">
+          <div id="firstStripe" className="stripe"></div>
+          <div className="stripe"></div>
+          <div id="lastStripe" className="stripe"></div>
+        </div>
       </button>
       <div className="logo d-flex align-items-center justify-content-center">
         NS
