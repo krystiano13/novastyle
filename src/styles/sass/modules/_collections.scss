@@ -13,23 +13,100 @@
         background-color: transparent;
         cursor: pointer;
         border: solid white 0.2rem;
-        
+        font-family: "Times New Roman", Times, serif;
+
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         color: white;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 500;
 
-        padding: 1rem;
+        transition: filter 250ms;
+        will-change: filter;
 
-        @media screen and (min-width : 992px) {
-            min-height: 70vh;
+        outline: none;
+
+        span {
+          padding: 1rem;
+        }
+
+        .bg {
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+
+          background-position: center 50%;
+          background-size: cover;
+
+          padding-bottom: 5%;
+
+          .content {
+            display : flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            min-height : 25%;
+
+            button {
+              border: none;
+              background-color: transparent;
+              color: white;
+
+              p {
+                font-size: 1.2rem;
+              }
+              h2 {
+                overflow: hidden;
+                font-size: 3rem;
+              }
+            }
+
+            .dots {
+              width: 100%;
+              height: auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .dot {
+                width: 0.75rem;
+                height:  0.75rem;
+                border-radius: 50%;
+                margin : 0.25rem;
+                background-color: grey;
+                opacity : 0.4;
+              }
+
+              .choosen {
+                opacity : 1;
+                background-color: white;
+              }
+            }
+          }
+        }
+
+        @media screen and (min-width: 992px) {
+          min-height: 80vh;
+          font-size: 2.5rem;
+
+          span {
+            padding: 2.5rem;
+          }
         }
       }
 
+      .col-md-12:hover {
+        filter: brightness(0.8);
+      }
+
       #c1 {
-       background-image:  url("../../assets/collections/c1.jpg");
+        background-image: url("../../assets/collections/c1.jpg");
       }
       #c2 {
         background-image: url("../../assets/collections/c2.jpg");
