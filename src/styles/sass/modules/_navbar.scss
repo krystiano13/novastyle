@@ -1,51 +1,78 @@
+.dropDownSection {
+  width: 50%;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  background-color: white;
+  margin-top : 60px;
+
+  transition: transform 300ms;
+  will-change: transform;
+
+  transform : translateX(-100%);
+
+  .a {
+    margin-top : 1rem;
+    margin-left : 1.5rem;
+    text-decoration: none;
+    color : black;
+    font-size : 1.1rem;
+  }
+}
+
+.showDropDown {
+  transform : translateX(0%);
+}
+
 nav {
   .hamburgerMenu {
     width: 60px;
-    height : 60px;
-    background-color : transparent;
-    border : none;
+    height: 60px;
+    background-color: transparent;
+    border: none;
 
     overflow: hidden;
 
-    cursor : pointer;
+    cursor: pointer;
     transition: background-color 150ms;
     will-change: background-color;
 
     .wrap {
-        width : 100%;
-        height : 100%;
-        transition : transform 600ms;
-        will-change: transform;
+      width: 100%;
+      height: 100%;
+      transition: transform 600ms;
+      will-change: transform;
     }
 
     .stripe {
-        width : 25px;
-        height : 2px;
-        background-color: black;
-        margin-top : 0.2rem;
-        margin-bottom : 0.2rem;
-        transition: transform 250ms, background-color 250ms;
-        will-change: transform, background-color;
+      width: 25px;
+      height: 2px;
+      background-color: black;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      transition: transform 250ms, background-color 250ms;
+      will-change: transform, background-color;
     }
   }
 
   .crossed {
     .wrap {
-        transform: rotate(90deg);
+      transform: rotate(90deg);
     }
 
     .stripe {
-        background-color: #33333300;
+      background-color: #33333300;
     }
-    #firstStripe,#lastStripe {
-        background-color: black;
+    #firstStripe,
+    #lastStripe {
+      background-color: black;
     }
 
     #firstStripe {
-        transform : translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
     }
     #lastStripe {
-        transform : translateY(-9px) rotate(-45deg);
+      transform: translateY(-9px) rotate(-45deg);
     }
   }
 
