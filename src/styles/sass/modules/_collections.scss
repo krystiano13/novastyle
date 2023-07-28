@@ -1,15 +1,48 @@
 .collections {
-    margin-top : 60px;
+  margin-top: 60px;
 
-    @media screen and (min-width : 2400px) {
-        margin-top : 120px;
-    }
+  @media screen and (min-width: 2400px) {
+    margin-top: 120px;
+  }
 
-    .container-fluid {
-        .row {
-            .col-md-12 {
-                min-height : 28rem;
-            }
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        min-height: 28rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        border: solid white 0.2rem;
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+
+        padding: 1rem;
+
+        @media screen and (min-width : 992px) {
+            min-height: 70vh;
         }
+      }
+
+      #c1 {
+       background-image:  url("../../assets/collections/c1.jpg");
+      }
+      #c2 {
+        background-image: url("../../assets/collections/c2.jpg");
+      }
+      #c3 {
+        background-image: url("../../assets/collections/c3.jpg");
+      }
+      #c4 {
+        background-image: url("../../assets/collections/c4.jpg");
+      }
+      #c5 {
+        background-image: url("../../assets/collections/c5.jpg");
+      }
     }
+  }
 }
