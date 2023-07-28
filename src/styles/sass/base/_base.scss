@@ -1,13 +1,19 @@
-*, *::before, *::after {
-    margin : 0;
-    padding : 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 nav {
-    min-height : 60px;
-    min-width : 100vw;
-    position : fixed;
-    z-index: 1001;
+  min-height: 60px;
+  min-width: 100vw;
+  position: fixed;
+  z-index: 1001;
+
+  @media screen and (min-width: 2400px) {
+    min-height: 120px;
+  }
 }
