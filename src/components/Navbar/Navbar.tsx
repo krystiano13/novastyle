@@ -3,7 +3,7 @@ import { Dropdown } from "./Dropdown";
 import { HamburgerButton } from "./HamburgerButton";
 import { Navigation } from "./Navigation";
 
-import bag from "../assets/bag.svg";
+import bag from "../../assets/bag.svg";
 
 const Navbar = () => {
   const [dropDown, setDropDown] = React.useState<boolean>(false);

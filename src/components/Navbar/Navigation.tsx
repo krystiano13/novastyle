@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import bag from "../assets/bag.svg";
-import search from "../assets/search.svg";
+import bag from "../../assets/bag.svg";
+import search from "../../assets/search.svg";
 
 const Navigation = () => {
     return (

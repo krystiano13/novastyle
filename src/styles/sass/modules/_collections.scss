@@ -1,0 +1,15 @@
+.collections {
+    margin-top : 60px;
+
+    @media screen and (min-width : 2400px) {
+        margin-top : 120px;
+    }
+
+    .container-fluid {
+        .row {
+            .col-md-12 {
+                min-height : 28rem;
+            }
+        }
+    }
+}
