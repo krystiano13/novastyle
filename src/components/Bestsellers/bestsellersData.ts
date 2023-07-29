@@ -18,6 +18,7 @@ export const bestsellersData = [
     isImg: true,
     img1: b11,
     img2: b12,
+    fr: true,
   },
   {
     id: 1,
@@ -25,6 +26,7 @@ export const bestsellersData = [
     isImg: false,
     img1: undefined,
     img2: undefined,
+    fr: true,
   },
   {
     id: 2,
@@ -32,6 +34,7 @@ export const bestsellersData = [
     isImg: true,
     img1: b21,
     img2: b22,
+    fr: true,
   },
   {
     id: 3,
@@ -39,6 +42,7 @@ export const bestsellersData = [
     isImg: true,
     img1: b31,
     img2: b32,
+    fr: false,
   },
   {
     id: 4,
@@ -46,6 +50,7 @@ export const bestsellersData = [
     isImg: true,
     img1: b41,
     img2: b42,
+    fr: false,
   },
   {
     id: 5,
@@ -53,6 +58,7 @@ export const bestsellersData = [
     isImg: true,
     img1: b51,
     img2: b52,
+    fr: false,
   },
   {
     id: 6,
@@ -60,5 +66,6 @@ export const bestsellersData = [
     isImg: true,
     img1: b61,
     img2: b62,
+    fr: false,
   },
 ];
