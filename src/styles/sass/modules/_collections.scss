@@ -10,10 +10,11 @@
       .col-md-12 {
         min-height: 28rem;
         border: none;
-        background-color: transparent;
+        background-color: grey;
         cursor: pointer;
-        border: solid white 0.2rem;
+        border: solid white 0.3rem;
         font-family: "Times New Roman", Times, serif;
+        position: relative;
 
         background-size: cover;
         background-position: center;
@@ -21,6 +22,7 @@
         color: white;
         font-size: 2rem;
         font-weight: 500;
+        padding: 0;
 
         transition: filter 250ms;
         will-change: filter;
@@ -34,59 +36,65 @@
         .bg {
           width: 100%;
           height: 100%;
+          position: absolute;
+          object-fit: cover;
+        }
 
+        video {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+        }
+
+        .content {
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: space-between;
+          width: 100%;
 
-          background-position: center 50%;
-          background-size: cover;
+          min-height: 25%;
+          position: absolute;
+          padding: 1rem;
+          z-index: 1200;
 
-          padding-bottom: 5%;
+          button {
+            border: none;
+            background-color: transparent;
+            color: white;
 
-          .content {
-            display : flex;
-            flex-direction: column;
+            p {
+              font-size: 1.2rem;
+            }
+            h2 {
+              overflow: hidden;
+              font-size: 3rem;
+            }
+          }
+
+          .dots {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
 
-            min-height : 25%;
+            .dot {
+              width: 0.75rem;
+              height: 0.75rem;
+              border-radius: 50%;
+              margin: 0.25rem;
+              background-color: grey;
+              opacity: 0.4;
 
-            button {
-              border: none;
-              background-color: transparent;
-              color: white;
-
-              p {
-                font-size: 1.2rem;
-              }
-              h2 {
-                overflow: hidden;
-                font-size: 3rem;
-              }
+              transition: background-color 250ms, opacity 250ms;
+              will-change: background-color, opacity;
             }
 
-            .dots {
-              width: 100%;
-              height: auto;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              .dot {
-                width: 0.75rem;
-                height:  0.75rem;
-                border-radius: 50%;
-                margin : 0.25rem;
-                background-color: grey;
-                opacity : 0.4;
-              }
-
-              .choosen {
-                opacity : 1;
-                background-color: white;
-              }
+            .choosen {
+              opacity: 1;
+              background-color: white;
             }
           }
         }
@@ -100,7 +108,7 @@
           }
         }
       }
-
+      
       .col-md-12:hover {
         filter: brightness(0.8);
       }
