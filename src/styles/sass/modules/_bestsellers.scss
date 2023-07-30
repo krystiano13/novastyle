@@ -8,17 +8,34 @@
     align-items: flex-end;
     cursor: pointer;
 
-    @media screen and (min-width : 992px){
-        height: 50rem;
+    @media screen and (min-width: 992px) {
+      height: 50rem;
+    }
+
+    @media screen and (min-width: 2400px) {
+      height: 70rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      height: 100rem;
     }
 
     img {
       position: absolute;
-      width : 94%;
+      width: 94%;
       height: 74vh;
+
       @media screen and (min-width: 992px) {
         width: 100%;
         height: 49rem;
+      }
+
+      @media screen and (min-width: 2400px) {
+        height: 69rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        height: 99rem;
       }
 
       transition: opacity 250ms;
@@ -36,30 +53,38 @@
       text-align: center;
       width: 50%;
       margin-left: 25%;
+
+      @media screen and (min-width: 2400px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 2rem;
+      }
     }
   }
 
   .first {
-    opacity : 1;
+    opacity: 1;
   }
-  
+
   .second {
-    opacity : 0;
+    opacity: 0;
   }
 
   .col-lg-4:hover,
   .col-lg-3:hover {
     .first {
-        opacity : 0;
+      opacity: 0;
     }
     .second {
-        opacity : 1;
+      opacity: 1;
     }
   }
 
   #text-version > * {
     overflow: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
   }
 
   #text-version {
@@ -72,16 +97,29 @@
     justify-content: center;
     align-items: center;
 
-
     h2 {
-        font-size : 3.75rem;
+      font-size: 3.75rem;
+
+      @media screen and (min-width: 2400px) {
+        font-size: 6rem;
+      }
+      @media screen and (min-width: 3200px) {
+        font-size: 9rem;
+      }
     }
 
     h3 {
-        background-color: transparent;
-        color : black;
-        align-self: auto;
-        font-size : 1.3rem;
+      background-color: transparent;
+      color: black;
+      align-self: auto;
+      font-size: 1.3rem;
+
+      @media screen and (min-width: 2400px) {
+        font-size: 1.8rem;
+      }
+      @media screen and (min-width: 2400px) {
+        font-size: 2.6rem;
+      }
     }
   }
 }
