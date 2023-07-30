@@ -8,7 +8,8 @@ const Bestsellers = () => {
         {bestsellersData.map((item) =>
           item.isImg ? (
             <div className={item.fr ? "col-lg-4 col-md-12" : "col-lg-3 col-md-12"}>
-              <img src={item.img1} alt={item.text} />
+              <img className="first" src={item.img1} alt={item.text} />
+              <img className="second" src={item.img2} alt={item.text} />
               <p>{item.text}</p>
             </div>
           ) : (
