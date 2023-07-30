@@ -1,0 +1,64 @@
+.Bestsellers {
+  .col-lg-4,
+  .col-lg-3 {
+    height: 75vh;
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    @media screen and (min-width : 992px){
+        height: 50rem;
+    }
+
+    img {
+      position: absolute;
+      width : 94%;
+      height: 74vh;
+      @media screen and (min-width: 992px) {
+        width: 100%;
+        height: 49rem;
+      }
+
+      object-fit: cover;
+    }
+
+    p {
+      position: absolute;
+      color: white;
+      font-size: 1rem;
+      align-self: flex-end;
+      background-color: rgba(51, 51, 51, 0.178);
+      text-align: center;
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+
+  #text-version > * {
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #text-version {
+    height: 50rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h2 {
+        font-size : 3.75rem;
+    }
+
+    h3 {
+        background-color: transparent;
+        color : black;
+        align-self: auto;
+        font-size : 1.3rem;
+    }
+  }
+}

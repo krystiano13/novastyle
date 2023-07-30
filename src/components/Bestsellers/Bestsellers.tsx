@@ -7,13 +7,13 @@ const Bestsellers = () => {
       <div className="row">
         {bestsellersData.map((item) =>
           item.isImg ? (
-            <div className={item.fr ? "col-4" : "col-3"}>
+            <div className={item.fr ? "col-lg-4 col-md-12" : "col-lg-3 col-md-12"}>
               <img src={item.img1} alt={item.text} />
               <p>{item.text}</p>
             </div>
           ) : (
-            <div className="col-4">
-              <p className="lead">OUR</p>
+            <div id="text-version" className="col-lg-4 col-md-12">
+              <h3 className="lead">OUR</h3>
               <h2>Bestsellers</h2>
             </div>
           )
