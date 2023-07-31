@@ -5,7 +5,7 @@ import globe from '../../assets/footer/globe.svg';
 
 const FooterAbout = () => {
   return (
-    <div className="col-lg-6 col-md-12">
+    <section className="col-lg-6 col-md-12">
       <h2>About Us</h2>
       <p>
         Inspired by modern nature, furious "60s and elegant beauty, brand
@@ -16,7 +16,7 @@ const FooterAbout = () => {
         <FooterButton src={globe} title="Pinterest" />
         <FooterButton src={globe} title="Instagram" />
       </div>
-    </div>
+    </section>
   );
 };
 
