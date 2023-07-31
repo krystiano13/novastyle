@@ -3,6 +3,7 @@ import React from "react";
 import { FooterAbout } from "./FooterAbout";
 import { FooterNavigation } from "./FooterNavigation";
 import { BeFirst } from "./BeFirst";
+import { FooterCollections } from "./FooterCollections";
 
 const Footer = () => {
     return (
@@ -10,6 +11,7 @@ const Footer = () => {
             <FooterAbout />
             <FooterNavigation />
             <BeFirst />
+            <FooterCollections />
         </footer>
     )
 }

@@ -7,6 +7,9 @@ import n6 from "../../assets/footer/n6.svg";
 import n7 from "../../assets/footer/n7.svg";
 import n8 from "../../assets/footer/n8.svg";
 
+import c1 from '../../assets/footer/c1.svg';
+import c2 from "../../assets/footer/c2.svg";
+
 const footerNav = [
   {
     id: 0,
@@ -50,4 +53,22 @@ const footerNav = [
   },
 ];
 
-export { footerNav };
+const footerCollection = [
+  {
+    id: 0,
+    text: "Radiant Chic",
+    src: c1,
+  },
+  {
+    id: 1,
+    text: "Refined Casuals",
+    src: c1,
+  },
+  {
+    id: 2,
+    text: "Modern Elegance",
+    src: c1,
+  },
+];
+
+export { footerNav, footerCollection };
