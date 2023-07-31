@@ -43,6 +43,13 @@ footer {
         width : 30%;
     }
   }
+
+  #collections {
+    .footerButton {
+        margin-top : 1rem;
+        width : 45%;
+    }
+  }
   
   @media screen and (min-width : 992px) {
     min-height: calc(100vh - 60px);
