@@ -2,10 +2,12 @@ footer {
   width: 100vw;
 
   min-height : calc(280vh - 60px);
+  overflow: hidden;
 
   .icons {
     display: flex;
   }
+
 
   .footerButton {
     display : flex;
@@ -29,6 +31,17 @@ footer {
 
   .footerButton:hover {
     background-color: #77777731;
+  }
+
+   .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top : 1rem;
+
+    .footerButton {
+        width : 30%;
+    }
   }
   
   @media screen and (min-width : 992px) {
