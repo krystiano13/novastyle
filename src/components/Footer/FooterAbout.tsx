@@ -5,7 +5,7 @@ import globe from '../../assets/footer/globe.svg';
 
 const FooterAbout = () => {
   return (
-    <div className="col-6">
+    <div className="col-lg-6 col-md-12">
       <h2>About Us</h2>
       <p>
         Inspired by modern nature, furious "60s and elegant beauty, brand

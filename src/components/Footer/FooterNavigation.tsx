@@ -5,7 +5,7 @@ import { footerNav } from "./FooterData";
 
 const FooterNavigation = () => {
   return (
-    <div className="col-6">
+    <div className="col-lg-6 col-md-12">
       <h2>Navigation</h2>
       <div className="buttons">
         {footerNav.map((item) => (
