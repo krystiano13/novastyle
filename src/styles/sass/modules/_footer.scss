@@ -30,10 +30,30 @@ footer {
     padding: 2%;
     margin-right: 2%;
 
+    @media screen and (min-width: 2400px) {
+      img {
+        width: 3rem;
+      }
+    }
+
+    @media screen and (min-width: 3200px) {
+      img {
+        width: 5rem;
+      }
+    }
+
     span {
       margin-top: 20%;
       font-size: 1.05rem;
       text-align: left;
+
+      @media screen and (min-width: 2400px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -49,29 +69,35 @@ footer {
 
     .footerButton {
       width: 30%;
-
     }
   }
 
   #collections {
-    padding-top : 10%;
+    padding-top: 10%;
     padding-bottom: 10%;
     .footerButton {
       margin-top: 1rem;
       width: 30%;
 
       img {
-        width : 25%;
+        width: 25%;
       }
 
       span {
-        font-size : 1.2rem;
+        font-size: 1.2rem;
+
+        @media screen and (min-width: 2400px) {
+          font-size: 2rem;
+        }
+        @media screen and (min-width: 3200px) {
+          font-size: 3rem;
+        }
       }
     }
   }
 
   #BeFirst {
-    padding-top : 10%;
+    padding-top: 10%;
     padding-bottom: 10%;
   }
 
@@ -83,6 +109,16 @@ footer {
       padding: 0.6rem;
       background-color: transparent;
       border: solid 0.1rem #c7c7c7;
+
+      @media screen and (min-width: 2400px) {
+        font-size : 1.5rem;
+        padding : 1.6rem;
+      }
+
+       @media screen and (min-width: 3200px) {
+        font-size : 2rem;
+        padding : 2.4rem;
+      }
     }
 
     input::placeholder {
@@ -95,6 +131,16 @@ footer {
       background-color: transparent;
       border: solid 0.1rem #c7c7c7;
       border-left: none;
+
+      @media screen and (min-width: 2400px) {
+        font-size : 1.75rem;
+        padding : 1.6rem;
+      }
+
+        @media screen and (min-width: 3200px) {
+        font-size : 2.5rem;
+        padding : 2.4rem;
+      }
     }
   }
 
@@ -118,6 +164,14 @@ footer {
     h2 {
       font-family: "Times New Roman", Times, serif;
       height: auto;
+
+      @media screen and (min-width: 2400px) {
+        font-size: 2.6rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 3.6rem;
+      }
     }
 
     p {
@@ -127,6 +181,16 @@ footer {
       @media screen and (min-width: 992px) {
         max-width: 80%;
         font-size: 1.6rem;
+      }
+
+      @media screen and (min-width: 2400px) {
+        max-width: 80%;
+        font-size: 2.2rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        max-width: 80%;
+        font-size: 2.9rem;
       }
     }
   }
