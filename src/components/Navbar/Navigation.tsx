@@ -10,7 +10,7 @@ const Navigation = () => {
         <NavLink className="a" to="/">
           ALL PRODUCTS
         </NavLink>
-        <NavLink className="a" to="/">
+        <NavLink className="a" to="/about">
           ABOUT US
         </NavLink>
         <NavLink className="a" to="/">
