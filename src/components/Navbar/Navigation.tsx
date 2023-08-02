@@ -13,7 +13,7 @@ const Navigation = () => {
         <NavLink className="a" to="/about">
           ABOUT US
         </NavLink>
-        <NavLink className="a" to="/">
+        <NavLink className="a" to="/contact">
           CONTACT US
         </NavLink>
         <NavLink className="a" to="/">
