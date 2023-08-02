@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="col-md-12 col-lg-4">
           <img className="img" src={cn2} alt="model" />
         </div>
-        <div className="col-md-12 col-lg-4">
+        <div className="col-md-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
           <img className="icon" src={home} alt="icon" />
           <p>Los Angeles, 3566</p>
           <p>House Road, 9001</p>
@@ -34,7 +34,7 @@ const Contact = () => {
         <div className="col-md-12 col-lg-4">
           <img className="img" src={ab3} alt="model" />
         </div>
-        <div className="col-md-12 col-lg-4">
+        <div className="col-md-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
           <img className="icon" src={home} alt="icon" />
           <p>New York,</p>
           <p>Middleville Road, 9017</p>

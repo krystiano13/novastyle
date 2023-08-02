@@ -32,6 +32,25 @@
     height : 45rem;
     background: linear-gradient(rgba(226, 204, 240, 0.13),rgba(207, 184, 228, 0.11));
 
+    p,h3,.icon {
+        margin-top : 0.5rem;
+        margin-bottom : 0.5rem;
+        overflow: hidden;
+    }
+
+    p {
+        font-size : 1.2rem;
+    }
+
+    .icon {
+        width : 5%;
+    }
+
+    h3 {
+        color : #3b38ec;
+        font-size : 1.6rem;
+    }
+
     input,textarea {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
