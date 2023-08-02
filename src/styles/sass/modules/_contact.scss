@@ -10,16 +10,16 @@
   }
 
   h1 {
-    margin-top : 5rem;
-    font-size : 4.5rem;
-    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    font-family: "Times New Roman", Times, serif;
   }
 
   h2 {
-    margin-top : 1rem;
+    margin-top: 1rem;
     margin-bottom: 5rem;
-    font-size : 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .row {
@@ -29,74 +29,112 @@
   }
 
   .col-lg-4 {
-    height : 45rem;
-    background: linear-gradient(rgba(226, 204, 240, 0.13),rgba(207, 184, 228, 0.11));
+    height: 45rem;
+    background: linear-gradient(
+      rgba(226, 204, 240, 0.13),
+      rgba(207, 184, 228, 0.11)
+    );
 
-    p,h3,.icon {
-        margin-top : 0.5rem;
-        margin-bottom : 0.5rem;
-        overflow: hidden;
+    @media screen and (min-width: 2400px) {
+      height: 50rem;
+    }
+    @media screen and (min-width: 3200px) {
+      height: 90rem;
+    }
+
+    p,
+    h3,
+    .icon {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+
+      @media screen and (min-width: 3200px) {
+        margin-top: 1.65rem;
+        margin-bottom: 1.65rem;
+      }
     }
 
     p {
-        font-size : 1.2rem;
+      font-size: 1.2rem;
+
+      @media screen and (min-width: 3200px) {
+        font-size: 2rem;
+      }
     }
 
     .icon {
-        width : 5%;
+      width: 5%;
     }
 
     h3 {
-        color : #3b38ec;
-        font-size : 1.6rem;
+      color: #3b38ec;
+      font-size: 1.6rem;
+
+      @media screen and (min-width: 3200px) {
+        font-size: 3.2rem;
+      }
     }
 
-    input,textarea {
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    input,
+    textarea {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
 
-    input,button,textarea {
-        margin-top : 1rem;
-        margin-bottom: 1rem;
+    input,
+    button,
+    textarea {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 
-        width : 75%;
+      width: 75%;
 
-        @media screen and (min-width : 992px) {
-            width : 50%;
-        }
+      @media screen and (min-width: 992px) {
+        width: 50%;
+      }
 
-        min-height : 5%;
-        padding : 1rem;
-        border: none;
-        font-size : 1.2rem;
-        outline : none;
+      min-height: 5%;
+      padding: 1rem;
+      border: none;
+      font-size: 1.2rem;
+      outline: none;
+
+      @media screen and (min-width: 3200px) {
+        font-size: 2rem;
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
     }
 
     textarea {
-        min-height : 12%;
-        max-height : 18%;
+      min-height: 12%;
+      max-height: 18%;
     }
 
     button {
-        color : white;
-        background-color: #332e3b;
-        cursor: pointer;
-        font-weight: 600;
-        font-size : 1.25rem;
+      color: white;
+      background-color: #332e3b;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.25rem;
 
-        transition: 250ms background-color;
-        will-change: background-color;
+      @media screen and (min-width: 3200px) {
+        font-size: 2.5rem;
+      }
+
+      transition: 250ms background-color;
+      will-change: background-color;
     }
 
     button:hover {
-        background-color: #3b38ec;
+      background-color: #3b38ec;
     }
 
     .img {
-        width : 100%;
-        height: 100%;
-        object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
-
 }
