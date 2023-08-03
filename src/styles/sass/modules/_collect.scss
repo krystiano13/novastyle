@@ -13,6 +13,10 @@
     margin-top: 5rem;
     font-size: 4rem;
     font-family: "Times New Roman", Times, serif;
+
+    @media screen and (min-width: 3200px) {
+      font-size: 6.5rem;
+    }
   }
 
   h2 {
@@ -20,6 +24,10 @@
     margin-bottom: 5rem;
     font-size: 1.4rem;
     font-family: "Times New Roman", Times, serif;
+
+    @media screen and (min-width: 3200px) {
+      font-size: 2rem;
+    }
   }
 
   .row {
@@ -29,15 +37,17 @@
       height: 60rem;
     }
 
+    @media screen and (min-width: 3200px) {
+      height: 90rem;
+    }
+
     .collection {
       height: 30rem;
       margin-bottom: 1rem;
 
       @media screen and (min-width: 992px) {
-        height: auto;
+        height: 100%;
       }
-
-      height: 100%;
       position: relative;
 
       img {
@@ -58,6 +68,10 @@
         font-weight: 500;
         color: whitesmoke;
         text-align: center;
+
+        @media screen and (min-width: 3200px) {
+          font-size: 5rem;
+        }
       }
     }
   }
