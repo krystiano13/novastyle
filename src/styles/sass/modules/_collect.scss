@@ -44,6 +44,10 @@
     .collection {
       height: 30rem;
       margin-bottom: 1rem;
+      cursor: pointer;
+
+      transition: filter 250ms;
+      will-change: filter;
 
       @media screen and (min-width: 992px) {
         height: 100%;
@@ -73,6 +77,10 @@
           font-size: 5rem;
         }
       }
+    }
+
+    .collection:hover {
+        filter: brightness(0.8);
     }
   }
 }
