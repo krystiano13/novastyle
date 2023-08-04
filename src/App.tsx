@@ -6,6 +6,7 @@ import { Contact } from "./views/Contact";
 import { Collections } from "./views/Collections";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
+import { Questions } from "./views/Questions";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/collections" element={<Collections />} />
+        <Route path="/questions" element={<Questions />} />
       </Routes>
       <Footer />
     </BrowserRouter>
