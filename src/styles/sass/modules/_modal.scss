@@ -1,0 +1,22 @@
+.cart_modal {
+    position : fixed;
+    z-index : 1100;
+    width : 100vw;
+    height : 100vh;
+    overflow : hidden;
+
+    background-color: #33333391;
+
+    transition : opacity 250ms, transform 250ms;
+    will-change: opacity, transform;
+}
+
+.hidden {
+    opacity : 0;
+    transform : scale(0);
+}
+
+.shown {
+    opacity : 1;
+    transform : scale(1);
+}

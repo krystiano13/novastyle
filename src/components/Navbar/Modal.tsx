@@ -1,8 +1,12 @@
 import React from "react";
 
-const Modal = () => {
+interface ModalInterace {
+    shown: boolean
+}
+
+const Modal: React.FC<ModalInterace> = ({ shown }) => {
   return (
-    <div className="cart_modal">
+    <div className={!shown ? "cart_modal hidden" : "cart_modal shown"}>
       <div className="modal_content">
         <div className="modal_bar">
           <p>Your Cart</p>
