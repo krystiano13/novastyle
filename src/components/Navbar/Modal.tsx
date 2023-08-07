@@ -1,21 +1,24 @@
 import React from "react";
 
 interface ModalInterace {
-    shown: boolean
+  shown: boolean;
 }
 
 const Modal: React.FC<ModalInterace> = ({ shown }) => {
   return (
-    <div className={!shown ? "cart_modal hidden" : "cart_modal shown"}>
+    <div
+      className={
+        !shown
+          ? "cart_modal hidden d-flex justify-content-center align-items-center"
+          : "cart_modal shown d-flex justify-content-center align-items-center"
+      }
+    >
       <div className="modal_content">
         <div className="modal_bar">
           <p>Your Cart</p>
-          <button className="modal_btn">
-            <div className="modal_btn_stripe"></div>
-            <div className="modal_btn_stripe"></div>
-          </button>
+          <button className="modal_btn">X</button>
         </div>
-        <div>
+        <div className="modal_text">
           <p className="lead">No items found.</p>
         </div>
       </div>
