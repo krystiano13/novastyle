@@ -4,7 +4,11 @@ import { NavLink, useNavigate } from "react-router-dom";
 import bag from "../../assets/bag.svg";
 import search from "../../assets/search.svg";
 
-const Navigation = () => {
+interface NavInterface {
+  showModal: () => void;
+}
+
+const Navigation: React.FC<NavInterface> = ({ showModal }) => {
   const navigate = useNavigate();
   return (
     <div className="navigation d-lg-flex d-none align-items-center justify-content-center">
@@ -26,7 +30,7 @@ const Navigation = () => {
       <button onClick={() => navigate("/search")} className="searchButton">
         <img src={search} alt="search" />
       </button>
-      <button className="cartButton">
+      <button onClick={() => showModal()} className="cartButton">
         <img src={bag} alt="bag" />
       </button>
     </div>
