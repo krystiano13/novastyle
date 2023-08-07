@@ -16,7 +16,10 @@ const Modal: React.FC<ModalInterace> = ({ shown }) => {
       <div className="modal_content">
         <div className="modal_bar">
           <p>Your Cart</p>
-          <button className="modal_btn">X</button>
+          <button className="modal_btn">
+            <div id="ms1" className="modal_stripe"></div>
+            <div id="ms2" className="modal_stripe"></div>
+          </button>
         </div>
         <div className="modal_text">
           <p className="lead">No items found.</p>

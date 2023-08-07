@@ -33,6 +33,22 @@
                 border : none;
                 cursor: pointer;
                 background-color: transparent;
+                position: relative;
+
+                .modal_stripe {
+                    width : 60%;
+                    height : 8%;
+                    background-color: black;
+                    position: absolute;
+                }
+
+                #ms1 {
+                    transform: rotate(45deg);
+                }
+
+                #ms2 {
+                    transform: rotate(-45deg);
+                }
             }
         }
 
