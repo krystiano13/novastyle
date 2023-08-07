@@ -1,10 +1,11 @@
 import React from "react";
 
 interface ModalInterace {
-  shown: boolean;
+    shown: boolean;
+    hide: () => void
 }
 
-const Modal: React.FC<ModalInterace> = ({ shown }) => {
+const Modal: React.FC<ModalInterace> = ({ shown, hide }) => {
   return (
     <div
       className={
@@ -16,7 +17,7 @@ const Modal: React.FC<ModalInterace> = ({ shown }) => {
       <div className="modal_content">
         <div className="modal_bar">
           <p>Your Cart</p>
-          <button className="modal_btn">
+          <button onClick={hide} className="modal_btn">
             <div id="ms1" className="modal_stripe"></div>
             <div id="ms2" className="modal_stripe"></div>
           </button>

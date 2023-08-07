@@ -1,73 +1,97 @@
 .cart_modal {
-    position : fixed;
-    z-index : 1100;
-    width : 100vw;
-    height : 100vh;
-    overflow : hidden;
+  position: fixed;
+  z-index: 1100;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 
-    background-color: #33333391;
+  background-color: #33333391;
 
-    transition : opacity 250ms, transform 250ms;
-    will-change: opacity, transform;
+  transition: opacity 250ms, transform 250ms;
+  will-change: opacity, transform;
 
-    .modal_content {
-        width : 55vh;
-        height : 30vh;
-        background-color: whitesmoke;
+  .modal_content {
+    width: 55vh;
+    height: 30vh;
+    background-color: whitesmoke;
 
-        .modal_bar {
-            width : 55vh;
-            height : 10vh;
-            display : flex;
-            justify-content: space-between;
-            align-items: center;
+    .modal_bar {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
 
-            p {
-                padding : 1rem;
-                font-size : 1.6rem;
-            }
+      p {
+        padding: 1rem;
+        font-size: 1.6rem;
 
-            button {
-                height : 5vh;
-                width : 5vh;
-                border : none;
-                cursor: pointer;
-                background-color: transparent;
-                position: relative;
-
-                .modal_stripe {
-                    width : 60%;
-                    height : 8%;
-                    background-color: black;
-                    position: absolute;
-                }
-
-                #ms1 {
-                    transform: rotate(45deg);
-                }
-
-                #ms2 {
-                    transform: rotate(-45deg);
-                }
-            }
+        @media screen and (min-width: 2400px) {
+          padding: 2rem;
+          font-size: 2.4rem;
         }
 
-        .modal_text {
-            width : 55vh;
-            height : 20vh;
-            display : flex;
-            justify-content: center;
-            align-items: center;
+        @media screen and (min-width: 3200px) {
+          padding: 3rem;
+          font-size: 3.2rem;
         }
+      }
+
+      button {
+        height: 5vh;
+        width: 5vh;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        position: relative;
+        overflow: hidden;
+
+        .modal_stripe {
+          width: 60%;
+          height: 8%;
+          background-color: black;
+          position: absolute;
+        }
+
+        #ms1 {
+          transform: rotate(45deg);
+        }
+
+        #ms2 {
+          transform: rotate(-45deg);
+        }
+      }
     }
+
+    .modal_text {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .lead {
+        @media screen and (min-width: 2400px) {
+          padding: 2rem;
+          font-size: 2.4rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          padding: 3rem;
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
 }
 
 .hidden {
-    opacity : 0;
-    transform : scale(0);
+  opacity: 0;
+  transform: scale(0);
 }
 
 .shown {
-    opacity : 1;
-    transform : scale(1);
+  opacity: 1;
+  transform: scale(1);
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Modal shown={modal} />
+      <Modal hide={() => setModal(false)} shown={modal} />
       <Dropdown dropDown={dropDown} />
       <nav className="d-flex align-items-center justify-content-between">
         <HamburgerButton
